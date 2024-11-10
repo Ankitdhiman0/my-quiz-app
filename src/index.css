@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7e7;
+}
+
+h1 {
+  font-family: "Takota";
+}
+
+h2 {
+  font-family: "Caroline";
+}
+
+nav {
+  height: 13vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.logo {
+  font-size: 3.5rem;
+}
+
+.progress-container {
+  height: 12vh;
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress {
+  width: 50%;
+  font-size: 1.8rem;
+  font-size: 1rem;
+}
+
+.progress-info {
+  width: 100%;
+  display: flex;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+progress {
+  width: 100%;
+  height: 5vh;
+}
+
+::-webkit-progress-bar {
+  border: 1px solid gray;
+  background: none;
+  border-radius: 100px;
+}
+::-webkit-progress-value {
+  background: skyblue;
+  border-radius: 100px;
+}
+
+.loader {
+  width: 50px;
+  height: 24px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 12px;
+  background-repeat: no-repeat;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.hero {
+  height: 87vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  gap: 10px;
+}
+
+.hero-h1 {
+  font-size: 6rem;
+}
+
+.hero-h2 {
+  font-size: 2.5rem;
+}
+
+.loader-container {
+  height: 87vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  height: 87vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-text {
+  font-size: 2rem;
+}
+
+.ready-btn {
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 40px;
+  width: 120px;
+  border-radius: 15px;
+  font-family: "Redwing";
+  font-size: 1.5rem;
+  background: none;
+  color: rgb(54, 54, 54);
+}
+
+.ready-btn:hover {
+  transition: all ease-in 0.08s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.questions-list {
+  height: 50vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.options {
+  height: 200px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.options-btn {
+  height: 8vh;
+  width: 100%;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.options-btn:hover {
+  transition: all ease-in 0.2s;
+  transform: scale(1.03);
+}
+
+.options-btn.correct {
+  background-color: rgb(220, 248, 181);
+  border: 2px solid green;
+  color: black;
+}
+.options-btn.wrong {
+  background-color: rgb(230, 175, 74);
+  border: 2px solid rgb(230, 175, 74);
+  color: black;
+}
+
+.Finish-Container {
+  height: 87vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+  padding-bottom: 20vh;
+}
+
+.finish-h1 {
+  height: 10vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  background-color: rgb(30, 118, 152);
+}
+
+.retry-btn {
+  height: 7vh;
+  width: 8rem;
+  border-radius: 5rem;
+  margin-top: 5vh;
+  background: none;
+  border: 1px solid gray;
+  color: rgb(54, 54, 54);
+}
+
+.retry-btn:hover {
+  transition: all ease-in 0.2s;
+  scale: 1.05;
+}
+
+.footer {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.footer-btn {
+  height: 7vh;
+  width: 8rem;
+  border-radius: 5rem;
+  background: none;
+  border: 1px solid gray;
+  color: rgb(54, 54, 54);
+  margin-left: 30rem;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  width: 8rem;
+  border-radius: 5rem;
+  background: none;
+  border: 1px solid gray;
+  color: rgb(54, 54, 54);
+  margin-right: 30rem;
+  position: fixed;
+}
